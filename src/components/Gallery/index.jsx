@@ -1,8 +1,7 @@
 import Tags from "../Tags";
 import styles from "./Gallery.module.scss";
 import images from "./images.json";
-import open from "./open.png";
-import favorito from "./favorito.png";
+import Card from "../Card";
 
 const Gallery = () => {
   return (
@@ -12,21 +11,12 @@ const Gallery = () => {
       <ul className={styles.gallery__cards}>
         {images.map((img) => {
           return (
-            <li key={img.id} className={styles.gallery__card}>
-              <img
-                className={styles.gallery__image}
-                src={img.imagem}
-                alt={img.titulo}
-              />
-              <p className={styles.gallery__description}>{img.titulo}</p>
-              <div>
-                <p>{img.creditos}</p>
-                <span>
-                  <img src={favorito} alt="Icone coração de curtir" />
-                  <img src={open} alt="Icone de abrir modal" />
-                </span>
-              </div>
-            </li>
+            <Card
+              id={img.id}
+              imagem={img.imagem}
+              titulo={img.titulo}
+              creditos={img.creditos}
+            />
           );
         })}
       </ul>

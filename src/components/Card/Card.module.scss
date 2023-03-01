@@ -1,3 +1,5 @@
+@import "../../styles/variaveis";
+
 .card {
   background-color: $azul-escuro;
   border-radius: 20px;
@@ -39,5 +41,18 @@
         cursor: pointer;
       }
     }
+  }
+
+  &__image {
+    height: 75%;
+    width: 100%;
+  }
+
+  &__description {
+    margin: 0;
+    padding: 0 16px;
+    font-size: 1.25rem;
+    color: $cor-do-texto;
+    font-family: $fonte-bold;
   }
 }
