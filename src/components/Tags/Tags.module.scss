@@ -19,12 +19,31 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 
     li {
       background-color: $tag-color;
       padding: 6px 10px;
       border-radius: 8px;
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .tags {
+    width: auto;
+
+    p {
+      width: 40%;
+      font-size: 1.25rem;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      overflow-x: auto;
     }
   }
 }

@@ -56,3 +56,13 @@
     font-family: $fonte-bold;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: auto;
+
+    &__image {
+      width: 250px;
+    }
+  }
+}

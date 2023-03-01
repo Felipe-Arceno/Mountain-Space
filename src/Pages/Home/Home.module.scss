@@ -17,3 +17,15 @@ main {
   margin-left: 17%;
   margin-top: 1rem;
 }
+
+@media screen and (max-width: 800px) {
+  .section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .gallery {
+    margin-left: 0;
+    flex-direction: column;
+  }
+}

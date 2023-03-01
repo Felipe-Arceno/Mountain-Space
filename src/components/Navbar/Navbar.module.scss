@@ -50,3 +50,14 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+
+    &__container {
+      width: 90%;
+    }
+  }
+}

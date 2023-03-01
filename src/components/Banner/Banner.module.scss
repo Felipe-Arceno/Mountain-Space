@@ -22,3 +22,14 @@
     margin-top: 10px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .banner {
+    width: 95%;
+
+    h1 {
+      font-size: 2rem;
+      width: 70%;
+    }
+  }
+}
